@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c3fw1dtogh5wu"]
+
+[ext_resource type="Script" uid="uid://c56a0tv1j5xju" path="res://character_body_2d.gd" id="1_bmift"]
+[ext_resource type="Texture2D" uid="uid://vlo688jv26kt" path="res://images/haven-picnic-bg-removebg-preview.png" id="1_hk2bv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(78, 129)
+
+[node name="Node2D" type="Node2D" unique_id=1037786999]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1715018396]
+script = ExtResource("1_bmift")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1254989691]
+position = Vector2(-55.75, 103.25)
+scale = Vector2(0.41623032, 0.41830984)
+texture = ExtResource("1_hk2bv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1599195339]
+position = Vector2(-57, 112.5)
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1255794604]
